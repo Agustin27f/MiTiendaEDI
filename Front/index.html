@@ -3,19 +3,20 @@
 <head>
   <title>Iniciar sesion</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="login-estilos.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="index.js"></script>
 </head>
 
-<body>
+<body onload="load()">
 <form action="principal.html" method="post">
   Ingrese su usuario
-  <input type="text" name="nombre" size="30"><br>
+  <input type="text" id="nombre" size="30"><br>
   <br>
   Ingrese la contraseña
   <input type="password" name="contraseña">
   <br>
   <br>
-  <input type="submit" value="Enviar">
+  <input type="button" value="Enviar" id="btnEnviar">
   <button type="reset">Borrar</button>
 </form>
 </body>
